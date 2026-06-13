@@ -29,39 +29,31 @@ MNISTデータを学習用データ、テストデータとして用いて、画
 
 ### C3.2.CNNモデルであるResNet50を用いた画像の分類
 PyTorchライブラリのtorchvision.modelsからResNet50を読み込み、複数の画像の分類に対する推論結果を検証しました。
-- **考察:** 既存のモデルを利用することのメリットを確認しました。その一方、事前学習したデータセットと離れた画像の入力した際の問題点を確認し、適切な利用、転用方法について理解しました。
+- **考察：** 既存のモデルを利用することのメリットを確認しました。その一方、事前学習したデータセットと離れた画像の入力した際の問題点を確認し、適切な利用、転用方法について理解しました。
 
 ### C4.MNISTモデルの最適化
 MNISTデータを学習用データ、テスト用データとして利用し、推論精度の向上を目指してモデルの構築と最適化を行いました。その結果、精度が73.34%から93.76%に向上しました。
 
 最終的なモデルのエポックと精度のグラフを図1に示します。
-<figure>
-  <img width="756" height="597" alt="image" src="https://github.com/user-attachments/assets/5c8bf2fc-5019-49ec-9806-c4c37095ebd8" />
-  <br>
-  <figcaption>図1: MNISTデータを利用したモデルのエポックと精度のグラフ
-  </figcaption>
-</figure>
-<br><br>
+<img width="756" height="597" alt="image" src="https://github.com/user-attachments/assets/5c8bf2fc-5019-49ec-9806-c4c37095ebd8" />
+
+*図1: MNISTデータを利用したモデルのエポックと精度のグラフ*
+
 - **考察:** 学習データが少ない場合にどのような工夫をすることで過学習が抑制できるのか特に意識して、推論精度の向上を目指しました。
 
 ### C5.手の画像認識
 学習用データを自身で用意し、TensorFlow Datasetsからrock_paper_scissorsをテストデータとする、より実践的なモデルの構築と最適化を行いました。その結果、精度が33.33%から57.53%に向上しました。
 
 最終的なモデルのエポックと精度のグラフを図2に示します。
-<figure>
-  <img width="614" height="503" alt="image" src="https://github.com/user-attachments/assets/ea533f2c-79c0-47f3-8c18-f28ee55bca4c" />
-  <br>
-  <figcaption>図2: 自作の学習データとTensorFlow Datasetsのテストデータを利用したモデルのエポックと精度のグラフ
-  </figcaption>
-</figure>
-<br><br>
+<img width="614" height="503" alt="image" src="https://github.com/user-attachments/assets/ea533f2c-79c0-47f3-8c18-f28ee55bca4c" />
+
+*図2: 自作の学習データとTensorFlow Datasetsのテストデータを利用したモデルのエポックと精度のグラフ*
+
 実際に使用した訓練データと、テストデータの一部を図3に示します。
-<figure>
-  <img width="584" height="632" alt="image" src="https://github.com/user-attachments/assets/08a650cd-83c9-431b-ae00-ba1c35805449" />
-  <br>
-  <figcaption>図3: 実際に使用した訓練データとテストデータの一部</figcaption>
-</figure>
-<br><br>
+<img width="584" height="632" alt="image" src="https://github.com/user-attachments/assets/08a650cd-83c9-431b-ae00-ba1c35805449" />
+
+*図3: 実際に使用した訓練データとテストデータの一部*
+
 - **考察:** テストデータの画像の傾向を事前に分析し、背景や手の形、向きなどの適した学習データを作成することの重要性を検証しました。また、画像の前処理を行うことの意義を深く理解しました。
 
 ---
