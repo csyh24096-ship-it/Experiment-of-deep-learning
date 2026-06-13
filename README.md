@@ -37,6 +37,7 @@ MNISTデータを学習用データ、テスト用データとして利用し、
 最終的なモデルのエポックと精度のグラフを図1に示します。
 <figure>
   <img width="756" height="597" alt="image" src="https://github.com/user-attachments/assets/5c8bf2fc-5019-49ec-9806-c4c37095ebd8" />
+  <br>
   <figcaption>図1: MNISTデータを利用したモデルのエポックと精度のグラフ
   </figcaption>
 </figure>
@@ -49,6 +50,7 @@ MNISTデータを学習用データ、テスト用データとして利用し、
 最終的なモデルのエポックと精度のグラフを図2に示します。
 <figure>
   <img width="614" height="503" alt="image" src="https://github.com/user-attachments/assets/ea533f2c-79c0-47f3-8c18-f28ee55bca4c" />
+  <br>
   <figcaption>図2: 自作の学習データとTensorFlow Datasetsのテストデータを利用したモデルのエポックと精度のグラフ
   </figcaption>
 </figure>
@@ -56,6 +58,7 @@ MNISTデータを学習用データ、テスト用データとして利用し、
 実際に使用した訓練データと、テストデータの一部を図3に示します。
 <figure>
   <img width="584" height="632" alt="image" src="https://github.com/user-attachments/assets/08a650cd-83c9-431b-ae00-ba1c35805449" />
+  <br>
   <figcaption>図3: 実際に使用した訓練データとテストデータの一部</figcaption>
 </figure>
 <br><br>
